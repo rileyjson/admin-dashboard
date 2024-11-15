@@ -15,7 +15,7 @@
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 70px 100px;
+  grid-template-rows: 1fr 1fr;
 }
 
 .main-user-profile {
@@ -24,6 +24,7 @@
   grid-row: 2 / 3;
   justify-self: center;
   align-self: center;
+  padding-bottom: 10px;
   gap: 20px;
 }
 
@@ -149,7 +150,6 @@ button:hover {
   list-style-type: none;
   margin: 30px;
   grid-auto-flow: column;
-  grid-template-columns: 35px;
   gap: 10px;
 }
 
@@ -198,21 +198,24 @@ button:hover {
 
 .ann {
   grid-column: 3 / 4;
-  grid-row: 2/3;
+  grid-row: 1/2;
   font-size: 20px;
+  padding-top: 30px;
+  justify-self: center;
   font-weight: bold;
 }
 
 .card-title {
   display: grid;
-  grid-template-rows: 30px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 200px;
   grid-column: span 3;
 }
 
 .main {
   background-color: #e2e8f0;
   display: grid;
-  grid-template-rows: 75px repeat(3, 1fr);
+  grid-template-rows: 70px;
 }
 
 .announcements {
@@ -244,11 +247,6 @@ button:hover {
 .maintenance,
 .community {
   border-bottom: solid;
-}
-
-.trending {
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
 }
 
 .main .card {
